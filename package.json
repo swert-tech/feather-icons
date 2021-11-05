@@ -1,6 +1,6 @@
 {
   "name": "@swert/feather-icons",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "simply beautiful open source icons as vue functional components.",
   "author": "Swert <opensource@swert.ru>",
   "license": "MIT",
