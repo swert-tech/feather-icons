@@ -37,12 +37,6 @@ You can also set a `px` size directly by just passing an integer
 <ActivityIcon size="25" class="custom-class" />
 ```
 
-## Tree shaking
-
-By using ES imports like `import { AirplayIcon } from '@swert/feather-icons'` with [webpack + minifier](https://webpack.js.org/guides/tree-shaking/#minify-the-output) or Rollup, unused exports in this module will be automatically eliminated.
-
-To make webpack tree shaking work without using any minifier, you can use the per-file icons from [`icons`](https://unpkg.com/vue-feather-icons/icons/) directory, e.g. `import AirplayIcon from '@swert/feather-icons/icons/AirplayIcon'`.
-
 ## Contributing
 
 1. Fork it!
