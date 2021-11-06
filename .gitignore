@@ -1,6 +1,6 @@
 node_modules
-dist/
-src/
-icons/
+dist
+src
+icons
 yarn.lock
 *.log
