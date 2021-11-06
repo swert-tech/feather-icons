@@ -28,5 +28,6 @@
   "exclude": [
     "dist",
     "node_modules"
-  ]
+  ],
+  "types": ["vite/client"]
 }

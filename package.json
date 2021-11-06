@@ -5,7 +5,7 @@
   "author": "Swert <opensource@swert.ru>",
   "license": "MIT",
   "repository": {
-    "url": "swert-tech/feather-icons",
+    "url": "git+https://github.com/swert-tech/feather-icons.git",
     "type": "git"
   },
   "main": "dist/feather-icons.umd.js",
@@ -22,10 +22,24 @@
     "icons",
     "types"
   ],
+  "bugs": {
+    "url": "https://github.com/swert-tech/feather-icons/issues"
+  },
+  "homepage": "https://github.com/swert-tech/feather-icons#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "keywords": [
+    "vue",
+    "feather-icons",
+    "swert"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "npm run build:icons && vite build",
     "build:icons": "node lib/build && babel src/components -d icons",
+    "prepublishOnly": "npm run build",
     "serve": "vite preview"
   },
   "dependencies": {
