@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@swert/feather-icons": "../",
+    "@swert/feather-icons": "link:..",
     "vue": "^3.2.16"
   },
   "devDependencies": {

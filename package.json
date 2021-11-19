@@ -56,5 +56,8 @@
     "poi": "^12.4.4",
     "typescript": "^4.4.4",
     "vite": "^2.6.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
   }
 }
