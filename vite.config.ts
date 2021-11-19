@@ -7,6 +7,6 @@ module.exports = defineConfig({
       entry: path.resolve(__dirname, 'src/index.js'),
       name: '@swert/feather-icons',
       fileName: (format) => `feather-icons.${format}.js`
-    },
+    }
   }
 })
