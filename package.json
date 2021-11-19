@@ -37,10 +37,9 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:icons && vite build",
+    "build": "pnpm build:icons && vite build",
     "build:icons": "node lib/build && babel src/components -d icons",
-    "prepublishOnly": "npm run build",
-    "serve": "vite preview"
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "vue": "^3.2.22"
