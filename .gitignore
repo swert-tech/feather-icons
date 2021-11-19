@@ -1,4 +1,5 @@
-node_modules
-dist
-icons
+node_modules/
+dist/
+src/
+icons/
 *.log
