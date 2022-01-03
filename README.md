@@ -3,6 +3,7 @@ FeatherIcon
 [![NPM version](https://img.shields.io/npm/v/@swert/feather-icons.svg?style=flat)](https://npmjs.com/package/@swert/feather-icons) [![NPM downloads](https://img.shields.io/npm/dm/@swert/feather-icons.svg?style=flat)](https://npmjs.com/package/@swert/feather-icons)
 
 ## Install
+
 ```bash
 $ npm install @swert/feather-icons
 ```
