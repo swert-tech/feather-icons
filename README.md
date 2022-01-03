@@ -4,15 +4,15 @@ FeatherIcon
 
 ## Install
 ```bash
-npm install @swert/feather-icons
+$ npm install @swert/feather-icons
 ```
 
 ```bash
-pnpm install @swert/feather-icons
+$ pnpm install @swert/feather-icons
 ```
 
 ```bash
-yarn add @swert/feather-icons
+$ yarn add @swert/feather-icons
 ```
 
 ## Usage
