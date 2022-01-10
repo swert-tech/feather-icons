@@ -23,12 +23,6 @@ export default defineConfig({
 
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/],
-
-      // custom resolvers
-      resolvers: [
-        // auto import icons
-
-      ],
     })
   ]
 })

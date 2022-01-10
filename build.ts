@@ -1,10 +1,12 @@
-const path = require('path')
-const feather = require('feather-icons')
-const pascalCase = require('pascal-case')
-const fs = require('fs-extra')
+import path from 'path'
+import feather from 'feather-icons'
+import pascalCase from 'pascal-case'
+import fs from 'fs-extra'
 
 const componentTemplate = (name, svg) => `
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
     name: '${name}',
 
     props: {
@@ -26,7 +28,7 @@ export default {
 
         return () => ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...attrs}>')}
     }
-}
+})
 `.trim()
 
 const handleComponentName = name => name.replace(/\-(\d+)/, '$1')
@@ -39,13 +41,13 @@ const icons = Object.keys(feather.icons).map(name => ({
 Promise.all(icons.map(icon => {
     const svg = feather.icons[icon.name].toSvg()
     const component = componentTemplate(icon.pascalCasedComponentName, svg)
-    const filepath = `./src/components/${icon.pascalCasedComponentName}.js`
+    const filepath = `./src/components/${icon.pascalCasedComponentName}.tsx`
 
     return fs.ensureDir(path.dirname(filepath)).then(() => fs.writeFile(filepath, component, 'utf8'))
 })).then(() => {
     const main = icons
-        .map(icon => `export { default as ${icon.pascalCasedComponentName} } from '../icons/${icon.pascalCasedComponentName}'`)
+        .map(icon => `export { default as ${icon.pascalCasedComponentName} } from '~/components/${icon.pascalCasedComponentName}'`)
         .join('\n\n')
 
-    return fs.outputFile('./src/index.js', main, 'utf8')
+    return fs.outputFile('./src/index.ts', main, 'utf8')
 })

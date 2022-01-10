@@ -1,33 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "baseUrl": ".",
+    "target": "esnext",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "moduleResolution": "Node",
+    "module": "esnext",
+    "moduleResolution": "node",
     "strict": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
+    "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client"],
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "include": [
-    "types/*.d.ts",
-  ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
-  "types": ["vite/client"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
+
