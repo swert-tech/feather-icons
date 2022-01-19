@@ -1,6 +1,6 @@
 {
   "name": "@swert/feather-icons",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "simply beautiful open source icons as vue functional components.",
   "author": "Swert <packages@swert.ru>",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "main": "dist/feather-icons.umd.js",
   "module": "dist/feather-icons.es.js",
-  "types": "src/types/index.d.ts",
+  "types": "types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/feather-icons.es.js",
@@ -18,7 +18,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "types/index.d.ts"
   ],
   "bugs": {
     "url": "https://github.com/swert-tech/feather-icons/issues"
